@@ -1,0 +1,894 @@
+/* Sale color style */
+.woocommerce span.onsale {
+    background-color: #EC5F3B;
+}
+
+/************ Cross Out Questions *************/
+/**
+ * This is css code of Cross Out Questions.
+ *
+ * Trello Link: https://trello.com/c/Q4dVIyk1
+ */
+.wdm-crossed-element label{
+    background-color: #ececec;
+    border: 1px solid #ddd;
+    outline: 0;
+    /*text-decoration: line-through;*/
+}
+.wdm-crossed-element label:before {
+    background-color: #ececec !important;
+}
+.wdm-crossed-element label:after {
+    background-color: #fff !important;
+}
+.wdm-cross {
+    width: 85px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.wdm-empty {
+    width: 85px;
+    padding: 10px 15px;
+}
+
+.wdm-crossed-element li label{
+    position: relative;
+}
+.wdm-crossed-element .wdm-cross-border {
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 10;
+    color: #000;
+}
+
+/* End Here */
+
+
+/************ Topic Materials *************/
+/**
+ * This is css code of Hide Quiz History Section.
+ *
+ * Trello Link: https://trello.com/c/gU8kb0eR
+ */
+.learndash_quiz_materials .sub-heading {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+.learndash_quiz_materials .sub-heading:after {
+    content: '\f068';
+    font-family: 'fontawesome';
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.learndash_quiz_materials .sub-heading.wdm-collapsed:after {
+    content: '\f067';
+    font-family: 'fontawesome';
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.learndash_quiz_materials {
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome, Edge, Opera and Firefox */
+}
+/* End Here */
+
+/* Remove Header Image */
+.elumine-course-buy .el-banner .buying-info-wrap {
+     position: unset;
+     bottom: 0;
+    /* left:30px; */
+    margin-top: 20px;
+}
+/* End Here */
+
+.wdm-quiz-header {
+    border: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+/************ Stick(fixed) questions selector and Timer *************/
+/**
+ * Feature name: Stick(fixed) questions selector and Timer
+ * Trello Link: https://trello.com/c/7CBOxyO2
+ * CSS only implementation of the question and timer style.
+ */
+.wpProQuiz_time_limit {
+    color: #fff !important;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.7);
+}
+.wpProQuiz_time_limit .wdm-quiz-label {
+    color: #fff !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+    padding-bottom: 10px !important;
+}
+.wpProQuiz_time_limit .wdm-selected {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Questionnaire Style*/
+@media only screen and (min-width: 768px) {
+}
+
+
+@media only screen and (max-width: 768px) {
+   /**
+    * Fix the Margin on smaller screensize
+    * Trello card:  https://trello.com/c/9fknPvqU/215-fix-alignment-spacing-of-buttons-in-non-practice-test-assessment;
+    */
+    div.wpProQuiz_content .el-actions-wrap input[name=review] {
+        margin-top: 5 !important;
+        margin-left: 20px !important;
+    }
+}
+@media only screen and (max-width: 1249px) and (min-width: 769px) {
+}
+@media only screen and (min-width: 1250px) {
+    .wpProQuiz_time_limit {
+        position: fixed;
+        top: 100px;
+        right: 0px;
+        width: 180px;
+        color: #fff !important;
+        font-weight: 600;
+        padding: 15px;
+        font-size: 2em;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .wpProQuiz_time_limit .wdm-quiz-label {
+        color: #fff !important;
+        font-size: 0.9em !important;
+        font-weight: 600 !important;
+        padding-bottom: 10px !important;
+    }
+    .wpProQuiz_time_limit .wdm-selected {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 600;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .wpProQuiz_time_limit {
+        top: 100px;
+        right: 0px;
+        width: 150px;
+        font-weight: 600;
+        padding: 15px;
+        font-size: 1.5em;
+    }
+    .wpProQuiz_time_limit .wdm-selected {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
+@media only screen and (min-width: 1480px) {
+    .wpProQuiz_time_limit {
+        position: fixed;
+        top: 100px;
+        width: 180px;
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+.wdm-material-content {
+  transform: translateY(0%);
+  transition: transform 0.5s;
+}
+
+.wpProQuiz_quiz.view-mode li.wpProQuiz_listItem.rc_set_start {
+    border-top: 1px solid #555;
+    margin-top: 15px;
+    padding-top: 20px;
+}
+.wpProQuiz_quiz.view-mode li.wpProQuiz_listItem.rc_set_end {
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+}
+
+/* NEO TEMPLATE STYLE */
+/************ Stick(fixed) questions selector and Timer *************/
+/**
+ * Feature name: Stick(fixed) questions selector and Timer
+ * Trello Link: https://trello.com/c/7CBOxyO2
+ * CSS only implementation of the question and timer style.
+ */
+
+.wpProQuiz_content .el-actions-wrap .el-right-actions {
+    flex-wrap: wrap;
+}
+/**
+ * Fix the Margin on smaller screensize
+ * Trello card:  https://trello.com/c/9fknPvqU/215-fix-alignment-spacing-of-buttons-in-non-practice-test-assessment;
+ */
+.wpProQuiz_content .el-actions-wrap .el-right-actions input{
+    margin-top:5px !important;
+}
+.wpProQuiz_reviewButtons input{
+    margin-top:5px;
+}
+.ld-focus-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  padding-right: 140px;
+}
+
+.rc-content,
+.rc-question {
+    height: 600px;
+    overflow-y: auto;
+    border-right: 3px solid #888;
+}
+
+/* Sticky Question bar*/
+.elumine-review-box .wpProQuiz_reviewDiv {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    max-width: 120px;
+    padding: 6px !important;
+}
+.elumine-review-box .wpProQuiz_reviewDiv span.question-label {
+    display: none !important;
+}
+.elumine-review-box .wpProQuiz_reviewDiv .wpProQuiz_reviewQuestion ol {
+    max-height: 420px !important;
+    overflow-x:auto;
+}
+.elumine-review-box .wpProQuiz_reviewDiv .wpProQuiz_reviewQuestion ol li{
+    margin: 5px;
+    height: 34px;
+    width: 35px;
+}
+.elumine-review-box .wpProQuiz_reviewQuestionTarget,
+.elumine-review-box .wpProQuiz_reviewQuestionSolvedCorrect,
+.elumine-review-box .wpProQuiz_reviewQuestionSolvedIncorrect,
+.elumine-review-box .wpProQuiz_reviewQuestionReview {
+    color: #fff !important;
+    font-weight: 600;
+}
+.elumine-review-box .wpProQuiz_reviewQuestionSolved {
+    color: #444 !important;
+    font-weight: 600;
+}
+
+.elumine-review-box .wpProQuiz_reviewLegend ol{
+    display: flex;
+    flex-direction: column;
+}
+.elumine-review-box .wpProQuiz_reviewLegend ol li{
+    padding-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+    .rc-content,
+    .rc-question {
+        border-right: none;
+        height: 100%;
+    }
+    .elumine-review-box .wpProQuiz_reviewDiv {
+        max-height: 160px !important;
+    }
+    .ld-focus-content {
+      margin-bottom: 160px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .ld-focus-content {
+        padding: 27px 20px 0px 20px !important;
+        /*margin-top: 210px;*/
+    }
+    .elumine-review-box .wpProQuiz_reviewLegend ol {
+        flex-direction: row;
+    }
+    .elumine-review-box .wpProQuiz_reviewDiv {
+        bottom: 0;
+        left: 0;
+        top: unset;
+        background-color: #fff;
+        max-width: 100%;
+        max-height: 150px;
+        z-index: 999;
+    }
+    .elumine-review-box .wpProQuiz_reviewDiv .wpProQuiz_reviewQuestion ol {
+        max-height: 88px !important;
+        overflow-x: auto;
+    }
+    .ld-focus-content {
+      margin-bottom: 160px;
+    }
+}
+
+.wpProQuiz_content .wpProQuiz_list .wpProQuiz_questionList .wpProQuiz_questionListItem {
+    display: flex;
+}
+.wdm_quiz_attempt_title_section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    background-color: rgba(1, 174, 211, 0.05);
+    font-size: 14px;
+    color:#666666
+}
+.wdm_quiz_attempt_icon{
+    width: 36px;
+    height: 36px;
+
+    color: #444444;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    transition: all 0.4s linear;
+    margin-top: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+
+.wdm_quiz_attempt_section{
+    margin: 10px 5px;
+}
+.wdm_quiz_attempt_section .wdm-active-section{
+    border-left: 5px solid #163b55;
+}
+
+.wdm_quiz_attempt_section{
+    border: 1px solid #bbb9b9;
+}
+
+.wp-list-table a.statistic_data{
+    padding: 10px;
+    background-color: #00316a;
+    color:#ffffff;
+    border-radius: 5px;
+}
+.wp-list-table a.statistic_set_content{
+    padding: 10px;
+    background-color: #00316a;
+    color:#ffffff;
+    border-radius: 5px;
+}
+
+
+/*Stasticis */
+
+.tts-user-info h2 {
+    font-size: 16px;
+}
+
+.ld-table-list-column.ld-table-list-column-comments {
+    display: none;
+}
+
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content p,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content span,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content label,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content input,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content i,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content em,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content ul,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content li,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content ol,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content tr,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content td,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content select,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content b,
+.woocommerce-account .elumine_content .wpProQuiz_modal_window .tts-collapse-content strong {
+    color: #000000;
+}
+
+span.tts-scale-range-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.tts-c-item {
+    width: 50px;
+    height: 35px;
+    color: #444;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f59f03;
+    margin: 2px;
+}
+.tts-collapse-wrap {
+    margin: 3px 0;
+}
+.tts-collapse-wrap .tts-collapse {
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid linear-gradient( 50deg, #44C373 75%, #c9aa04 75%);
+    /* color: #fff !important; */
+    /* background-color: #444; */
+    background: linear-gradient( 50deg, #44C373 75%, #c9aa04 75%);
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.tts-collapse-wrap .tts-collapse-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc4c4;
+}
+
+.tts-collapse-wrap.tts-active .tts-collapse-content{
+    display: block;
+    background-color: #fbfeff;
+    border-left: 4px solid #44C373;
+}
+
+.tts-collapse-wrap .ps-icon {
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    color: #fff;
+    /* padding: 5px; */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.tts-collapse-wrap .tts-collapse-header {
+    font-weight: 500;
+    color: #fff !important;
+}
+
+.tts-collapse-wrap .tts-collapse-inner {
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #444;
+    /* color: #fff !important; */
+    /* background-color: #444; */
+    background: #444;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.tts-collapse-wrap-inner .tts-collapse-content-inner {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc4c4;
+}
+
+.tts-collapse-wrap-inner.tts-active .tts-collapse-content-inner{
+    display: block;
+    background-color: #fbfeff;
+    border-left: 4px solid #444;
+}
+
+.tts-collapse-wrap .tts-collapse-header-inner {
+    font-weight: 500;
+    color: #fff !important;
+}
+.tts-collapse-wrap .ps-icon i{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+.tts-collapse-wrap .ps-icon i{
+    color: #fff !important;
+}
+table.tts-list-sections {
+    font-size: 16px
+}
+table.tts-list-sections th {
+    font-weight: 600;
+}
+
+/**
+ * CSS code of the Variable options.
+ */
+
+.wdm-var-option {
+    padding: 8px 0;
+}
+
+.wdm-sngl-var-seat .wdm-at-val {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.wdm-sngl-var-price {
+    font-weight: 600;
+    color: #ef8204;
+    font-size: 17px;
+}
+.pa_duration {
+    color: #00316a;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+.wdm-var-option:first-child .wdm-at-val {
+    font-weight: 600;
+    color: #00316a;
+    font-size: 17px;
+}
+
+div.wpProQuiz_content > .wpProQuiz_reviewDiv {
+    display: none !important;
+}
+
+div.wpProQuiz_content .el-review-footer {
+    flex-wrap: wrap;
+}
+
+.login-remember label {
+    color: #555 !important;
+}
+span.woocommerce-Price-currencySymbol {
+    color: inherit !important;
+}
+
+/** THEME Style Issues **/
+#elumine_login_submit:hover,
+.login-header-menu:hover {
+     color: #ef8204 !important;
+}
+
+div.elumine-review-box div.wpProQuiz_reviewDiv input.wpProQuiz_button2 {
+    display: none !important;
+}
+
+li.wpProQuiz_questionListItem label {
+    color: #000 !important;
+}
+
+div.wpProQuiz_content div.wpProQuiz_quiz .wpProQuiz_questionListItem [type=radio]:checked+label {
+    background-color: #ffffff !important;
+    border: 1px solid #163b55 !important;
+}
+
+div.wpProQuiz_content .wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionTarget {
+    color: #ffffff !important;
+    background-color: #444444 !important;
+}
+
+div.wpProQuiz_content .wpProQuiz_reviewQuestion ol li.wpProQuiz_reviewQuestionSolved {
+    background-color: #235578 !important;
+    color: #ffffff !important;
+}
+div.wpProQuiz_content .wpProQuiz_reviewLegend ol li .wpProQuiz_reviewColor_Answer {
+    background-color: #235578;
+}
+div.wpProQuiz_content .wpProQuiz_reviewLegend ol li .wpProQuiz_reviewColor_Review,
+div.wpProQuiz_content .wpProQuiz_reviewQuestion ol li.wpProQuiz_reviewQuestionReview {
+    background-color: #FF891C;
+    font-weight: 600;
+}
+
+.el-timer-wrap {
+    min-height: 0 !important;
+}
+
+.el-timer-wrap {
+    min-height: 0 !important;
+}
+
+.wpProQuiz_content .wpProQuiz_list .wpProQuiz_questionList .wpProQuiz_questionListItem input[type=radio]+label {
+    background-color: #ffffff;
+}
+.wpProQuiz_time_limit {
+    z-index: 1000000000000;
+    opacity: 1;
+    background-color: #00316a !important;
+}
+.wpProQuiz_time_limit .tl-label {
+    color: #ffffff !important;
+    margin: 5px !important;
+}
+.elumine-site-logo {
+    background-color: transparent !important;
+}
+body.sfwd-quiz-template-default.elumine-theme.single-sfwd-quiz [type=radio]:checked+label:after {
+    background-color: #fff !important;
+}
+
+.ld-lesson-navigation span.el-title-text,
+.ld-lesson-navigation .ld-lesson-title,
+.ld-lesson-navigation .ld-topic-title,
+.ld-focus-sidebar .elumine-course-heading,
+.ld-focus-content a{
+    color: #163b55;
+}
+.ld-lesson-navigation span.el-title-text:hover,
+.ld-lesson-navigation .ld-lesson-title:hover,
+.ld-lesson-navigation .ld-topic-title:hover,
+.ld-focus-sidebar .elumine-course-heading:hover,
+.ld-focus-content a:hover {
+    color: #f89827;
+}
+.ld-lesson-navigation .ld-lesson-item-preview .ld-lesson-title {
+    display: inline-grid;
+}
+.elumine-top-info {
+    flex-direction: row !important;
+    margin-bottom: 15px;
+}
+
+.elumine-top-info .wpProQuiz_header{
+    border: 0 !important;
+}
+
+.elumine-top-info .wpProQuiz_header .el-q-no {
+   font-size: 20px;
+   color: #444 !important;
+   padding-left: 0 !important;
+   display: inline-block !important;
+}
+
+.ld-focus-sidebar .elumine-course-heading {
+    font-size: 18px;
+}
+
+div.wpProQuiz_content .el-actions-wrap input[name=skip],
+div.wpProQuiz_content .el-actions-wrap input[name=review] {
+    background-color: #00316a !important;
+    color: #fff !important;
+    box-shadow: none;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    padding: 12px 24px !important;
+    border-radius: 5px !important;
+    margin-top: 5 !important;
+   /* margin-left: 20px !important;*/
+    line-height: 1.7 !important;
+}
+.wpProQuiz_reviewButtons {
+    margin-top: 0 !important;   
+}
+
+div.wpProQuiz_content .el-actions-wrap input[type=button] {
+    box-shadow: none;
+    font-size: 14px;
+    text-transform: uppercase
+}
+.el-gear-icon {
+    display: none !important;
+}
+@media only screen and (max-width: 992px) {
+    .mob-icon-cross:before {
+        content: "\00d7";
+        font-size: 32px;
+    }
+}
+
+.woocommerce-account .wdm-billing-input > p > label {
+    display: block;
+}
+
+.woocommerce-account span.woocommerce-input-wrapper .select2 {
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid;
+}
+.woocommerce-account .wdm-sub-head {
+    padding: 0;
+}
+.woocommerce-account p#billing_postcode_field {
+    display: block !important;
+}
+
+#elumine-focus-header .ld-user-menu .ld-text {
+    display: inline !important;
+    padding-right: 15px;
+}
+
+.wpProQuiz_content .wpProQuiz_list .tts-que-container  .wpProQuiz_question_text {
+    font-size: 18px;
+    font-weight: 500;
+    color: inherit;
+}
+
+.menu-mobile-menu-container a.menu-more-arrow:after{
+    margin-left: -40px;
+}
+
+.menu-mobile-container .fa {
+    font-family: 'FontAwesome' !important;
+}
+.modern header#masthead.transparent #primary-menu>li>a,
+.modern header#masthead.transparent #buddypress-navigation a {
+    color: inherit !important;
+}
+
+.modern .transparent .menu-item-has-children .sub-menu {
+    background-color: #ededed !important;
+}
+
+.modern #masthead.transparent .navbar-nav>.menu-item:hover {
+    background-color: rgba(0,0,0,0.85);
+    background-color: #ededed !important;
+}
+
+.el-instructor {
+    display: none !important;
+}
+
+.el-course-banner .el-course-info .el-course-title {
+    text-shadow: none !important;
+}
+
+.el-course-content-info {
+    padding-right: 19px !important;
+    padding-left: 19px !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.tts-collapse-content {
+  display: none;
+  padding: 15px;
+}
+.tts-collapse-active .tts-collapse-content {
+  display: block;
+  border-top: 1px solid #ccc;
+}
+div.cli-modal .cli-modal-close {
+    background: #fff !important;
+}
+
+.tts-collapse-header span:hover {
+    color: #ec5f3b !important;
+    cursor: pointer;
+}
+.ld-table-list-items .ld-table-list-item a:hover{
+    color: #f89827;
+}
+
+.tts-custom-timer {
+    top: 106px !important;
+}
+
+.tts-custom-timer {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.tts-custom-timer .time {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.tts-custom-section-nav li.custom_wpProQuiz_reviewQuestionTarget {
+    color: #ffffff !important;
+    background-color: #444444 !important;
+}
+
+.tts-custom-timer {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.24);
+    z-index: 99;
+    width: 160px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+    padding-left: 9px;
+    padding-right: 12px;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    right: 0px;
+    top: 200px;
+    z-index: 1000000000000;
+    opacity: 1;
+    background-color: #444 !important;
+}
+
+.tl-label {
+    color: #ffffff !important;
+    margin: 5px !important;
+}
+.time span {
+    font-size: 18px;
+    color: #FF891C;
+    font-weight: 700;
+    letter-spacing: 2px
+}
+a.btn.tts-next-section {box-shadow: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+a.btn.tts-next-section:hover {
+    color: #fff;
+}
+
+.tts-ps-timer-enabled {
+    display: none !important;
+}
+
+.tts-ps-active-sec {
+    background-color: #e8e8e8 !important;
+}
+
+.tts-disabled-section {
+    opacity: 0.6 !important;
+}
+
+.wpProQuiz_questionListItem{
+    width: 100%;
+}
+.break-skip {
+    display:block;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wpProQuiz_button2, .wpProQuiz_button {
+    font-weight: 500 !important;
+}
+
+.learndash-wrapper div.wpProQuiz_content .wpProQuiz_reviewQuestion ol li.custom_wpProQuiz_reviewQuestionReview {
+    background-color: #FF891C!important;
+    font-weight: 600;
+    color: #fff;
+}
+
+.admin-bar .ld-focus-sidebar-wrapper {
+    height: calc(100% - 170px) !important;
+}
+
+.focused .ld-focus-sidebar-wrapper {
+    height: calc(100% - 170px) !important;
+}
+
+.admin-bar .focused .ld-focus-sidebar-wrapper {
+    height: calc(100% - 170px) !important;
+}
+.ld-focus-sidebar-wrapper {
+    height: calc(100% - 170px) !important;
+}
+
+.wdm-chk-vld-wrapper {
+    border: 3px dotted #f19a9a;
+    padding: 15px;
+    background: #f3eded;
+}
+
+input#tts-new-student-email {
+    width: 100%;
+}
+
+.wdm-chk-vld-wrapper .message-box {
+    padding: 20px 0;
+    font-weight: 600;
+}

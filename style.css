@@ -1,0 +1,1235 @@
+
+ /*Theme Name:   Elumine Child
+ Theme URI:    https://wisdmlabs.com/elumine
+ Description:  Elumine Child Theme
+ Author:       Wisdmlabs
+ Author URI:   https://wisdmlabs.com
+ Template:     elumine
+ Version:      1.0.0
+ Tags:         elearning
+ Text Domain:  elumine-child
+*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+*/
+/*@mixin font-size($sizeValue: 1) {
+    font-size: ($sizeValue * 15) * 1px;
+    font-size: $sizeValue * 1rem;
+}*/
+/*
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+     ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://use.typekit.net/coz8isc.css");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #05294e;
+  font-family: "proxima-nova", sans-serif !important;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "proxima-nova", sans-serif !important;
+  font-style: normal;
+  font-weight: 800; 
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1.16666667;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 1.75rem 0 1.5rem; 
+}
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.125;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 1.5rem 0 1.25rem; 
+}
+
+h3 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3625;
+  margin: 0;
+  padding: 1.25rem 0 .875rem; 
+}
+
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  line-height: 1.125;
+  margin: 0;
+  padding: 1.5rem 0 .875rem; 
+}
+
+h5 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: .05em;
+  line-height: 1.2;
+  margin: 0;
+  padding: 1.5rem 0 .75rem; 
+}
+p {
+  margin: 0 0 1.5rem;
+  font-family: "pt-serif",serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .035em;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.625; 
+}
+ul#menu-footer-utility-menu li.menu-item {
+    margin: 0 !important;
+}
+
+
+
+/* Home Page Style */
+.menu-item-has-children {
+    padding: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+.thetutorverse-footer-widget .widget-title {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+}
+.thetutorverse-footer-widget a,
+.site-info a {
+    font-size: 16px !important;
+    color: #fff !important;
+}
+.thetutorverse-footer-widget a:hover,
+.site-info a:hover {
+    font-size: 16px !important;
+    color: #47AFF6 !important;
+}
+.thetutorverse-footer-widget .textwidget {
+        font-size: 16px;
+        font-size: 1rem;
+        color: #fff;
+        font-family: "proxima-nova",sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: .5rem;
+}
+
+/* Footer Gravity Form*/
+.thetutorverse-footer-widget form {
+    margin-left: 0;
+}
+.thetutorverse-footer-widget form {
+    margin-left: 0;
+}
+.thetutorverse-footer-widget form .gfield .gfield_select{
+    background-color: #fff;
+    background-position: 97% !important;
+    height: 40px !important;
+    color: #05294e !important;
+}
+.thetutorverse-footer-widget form .gfield input {
+    background-color: #fff !important;
+    color: #05294e !important;
+}
+
+.thetutorverse-footer-widget .gform_wrapper.gf_browser_chrome select {
+    padding: 3px 46px 3px 10px !important;
+    border: 0;
+    background-color: #fff !important;
+}
+.thetutorverse-footer-widget form .gfield input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #05294e;
+  opacity: 1; /* Firefox */
+}
+
+.thetutorverse-footer-widget form .gfield input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #05294e;
+}
+
+.thetutorverse-footer-widget form .gfield input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #05294e;
+}
+.thetutorverse-footer-widget .gform_footer.top_label {
+    padding: 0 !important;
+}
+.thetutorverse-footer-widget .validation_error {
+    display: none;
+}
+.thetutorverse-footer-widget .validation_message{
+    color: #ec5f3b !important;
+}
+.thetutorverse-footer-widget .gform_footer .gform_button {
+    padding: 5px 12px !important;
+    margin-top: -6px !important;
+}
+
+/* GF END*/
+.el-footer-content {
+    font-style: normal;
+}
+
+.site-info span{
+    font-size: 16px !important;
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.site-info a:before {
+    content: '|';
+    display: inline-block;
+    padding: 0 .75rem;
+    color: #fff !important;
+}
+.site-info {
+    border: 0 !important;
+}
+.site-info:before {
+    width: 80%;
+    margin: 2em auto;
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #181819;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper {
+    margin: .5rem 30px .75rem 0px;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal {
+    margin: 0 !important;
+}
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal {
+    position: relative;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal .top_label .gfield_label {
+    display: none;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal div.gform_body {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal div.gform_body ul.top_label.form_sublabel_below li.gfield {
+    padding-right: 0;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal div.gform_footer.top_label {
+    text-align: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    cursor: pointer;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal div.gform_footer.top_label:before {
+    content: '\f178';
+    font-family: 'FontAwesome' !important;
+    display: block;
+    position: absolute;
+    top: .05rem;
+    right: 1.5rem;
+    color: #05294e;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -ms-transition: all 150ms;
+    -o-transition: all 150ms;
+    transition: all 150ms;
+
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal div.gform_footer.top_label input[type=submit] {
+    text-indent: -999999px;
+    border-radius: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper form.gf_simple_horizontal div.gform_footer.top_label:hover:before {
+    right: .625rem;
+    color: #ec5f3b;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper .validation_error {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper .gfield_description.validation_message {
+    display: block;
+    color: #ec5f3b;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: .125em;
+    line-height: 1.35;
+    margin-top: .375rem;
+    padding: 0;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), body  .thetutorverse-footer-widget .gform_wrapper li.gfield_error textarea {
+    border: none;
+}
+
+body  .thetutorverse-footer-widget .gform_wrapper ul li.gfield {
+    margin-top: 0;
+}
+
+body  .thetutorverse-footer-widget .gform_confirmation_message {
+    color: #47AFF6;
+}
+
+
+/* Footer */
+.thetutorverse-footer .widget-title {
+  color: #fff;
+}
+.thetutorverse-footer ul.menu {
+    list-style: none;
+    margin: 0;
+     padding-left: 0 !important;
+    /*text-align: right;*/
+}
+
+.thetutorverse-footer .thetutorverse-footer-utility ul.menu li,
+.thetutorverse-footer .menu-social-media-container ul.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-social-media-container {
+    padding-top: 1rem;
+}
+
+.menu-social-media-container a {
+    text-decoration: none;
+    width: 0;
+    margin: 0;
+    padding: 0 1.5rem;
+    display: inline-block;
+    text-indent: -9999999px;
+    color: #fff !important;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+}
+
+.menu-social-media-container a:hover {
+    color: #ec5f3b !important;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+.menu-social-media-container a:before {
+    font-family: FontAwesome;
+    font-size: 1.25rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-indent: 0;
+}
+
+.menu-social-media-container a[href*="facebook.com"]:before {
+    content: "\f09a";
+}
+
+.menu-social-media-container a[href*="twitter.com"]:before {
+    content: "\f099";
+}
+
+.menu-social-media-container a[href*="linkedin.com"]:before {
+    content: "\f0e1";
+}
+
+.menu-social-media-container a[href*="instagram.com"]:before {
+    content: "\f16d";
+}
+
+.menu-social-media-container a[href*="youtube.com"]:before {
+    content: "\f16a";
+}
+
+.menu-social-media-container a[href*="skype.com"]:before {
+    content: "\f17e";
+}
+
+.menu-social-media-container a[href*="pinterest.com"]:before {
+    content: "\f231";
+}
+
+.menu-social-media-container a[href*="google.com"]:before {
+    content: "\f0d5";
+}
+
+.menu-social-media-container a[href*="tumblr.com"]:before {
+    content: "\f173";
+}
+
+.thetutorverse-footer-utility {
+    color: #fff;
+}
+
+.thetutorverse-footer-utility li a {
+    font-size: 16px !important;
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.thetutorverse-footer-utility li a:hover {
+     color: #47AFF6 !important;
+}
+.thetutorverse-footer-utility li a:before,
+.thetutorverse-contact p a:before {
+    content: '|';
+    display: inline-block;
+    padding: 0 .75rem;
+    color: #fff !important;
+}
+.thetutorverse-contact p{
+    margin-bottom: 0;
+}
+.thetutorverse-contact p a {
+    font-size: 16px !important;
+    color: #fff !important;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.thetutorverse-header-main {
+    position: relative;
+}
+.thetutorverse-header-foot {
+    position: absolute;
+    bottom: -1.75rem;
+}
+ul.sub-menu a{
+    color: #434343 !important;
+}
+ul.sub-menu a:hover{
+    color: #EC5F3B !important;
+}
+span.back-to-top {
+    background-color: #333;
+    border: 1px solid #333;
+}
+@media only screen and (max-width: 600px) {
+    .thetutorverse-footer ul.menu {
+        text-align: center;
+    }
+    .thetutorverse-footer-utility li a:before,
+    .thetutorverse-contact p a:before {
+        content: '';
+        display: inline-block;
+    }
+    li#wp-admin-bar-my-account {
+        width: 45px;
+  }
+}
+/* Home Page Style Ends Here*/
+
+/* General Styles */
+p,h1,h2,h3,h4,h5,h6,a,span,div {
+    font-family: "proxima-nova",sans-serif;
+    font-style: inherit; 
+}
+
+h1 {
+  line-height: 1.16666667;
+  text-rendering: optimizeLegibility !important;
+  margin: 0;
+  padding: 1.75rem 0 1.5rem; }
+
+h2 {
+  line-height: 1.125;
+  text-rendering: optimizeLegibility !important;
+  margin: 0;
+  padding: 1.5rem 0 1.25rem;  }
+
+h3 {
+  letter-spacing: 0.04em;
+  line-height: 1.3625;
+  margin: 0;
+  padding: 1.25rem 0 .875rem; }
+
+h4 {
+  letter-spacing: 0.04em;
+  line-height: 1.125;
+  margin: 0;
+  padding: 1.5rem 0 .875rem; }
+
+h5 {
+  letter-spacing: .05em;
+  line-height: 1.2;
+  margin: 0;
+  padding: 1.5rem 0 .75rem; }
+
+h6 {
+  letter-spacing: .125em;
+  line-height: 1.35; }
+
+/* Post Shortcode Block */
+.tts-page-block .product {
+    margin-bottom: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tts-page-block .product .product-tile{
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgb(19 73 110 / 20%);
+    padding: 1.5rem 4rem 4.625rem 2rem;
+    height: 100%;
+}
+
+.tts-page-block .product .product-tile h3{
+    display: block;
+    min-height: 5rem;
+}
+
+.tts-page-block .product .product-tile div.small{
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: .5rem;
+}
+
+.tts-page-block .product .product-tile footer {
+    position: absolute;
+    bottom: 2rem;
+    padding-top: 5px;
+}
+
+.tts-page-block .product .product-tile footer .orange {
+    background-color: #ec5f3b;
+    border-color: #ec5f3b;
+}
+.tts-page-block .product .product-tile footer .orange:hover {
+    background-color: transparent;
+    color: #ec5f3b;
+}
+.tts-page-block .product .product-tile footer .read-more{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    margin: .5rem 15px;
+    border-radius: 500px;
+    padding: .6375rem 1.75rem;
+    outline: none;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: .125em;
+    line-height: 1.35;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-transition: all 175ms ease-in-out;
+    -moz-transition: all 175ms ease-in-out;
+    -ms-transition: all 175ms ease-in-out;
+    -o-transition: all 175ms ease-in-out;
+    transition: all 175ms ease-in-out;
+
+}
+
+/* quiz side sticky bar  */
+div.wpProQuiz_content .wpProQuiz_reviewDiv {
+    background-color: #fff;
+}
+
+/* Course Landing Page - Customization */
+.learndash_post_sfwd-courses .ld-course-status {
+    color: #163b55;
+    background: #f0f3f6;
+    padding: 1em 0;
+    margin: 1em 0;
+    border-radius: 6px;
+}
+
+.ld-course-status-enrolled .ld-progress .ld-progress-stats .ld-progress-steps label {
+    color: inherit !important;
+}
+
+.elumine-percentage-info .modern-icon-Check-mark::before,
+.ld-progress-percentage .el-completed-text {
+    color: #ef8204 !important;
+}
+
+.ld-progress-stats {
+    background-color: #fff !important;
+    border: 0 !important;
+}
+
+
+.learndash_post_sfwd-courses .ld-course-status .ld-course-status-segment {
+    /*display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+    margin-bottom: 0 !important;
+    border-left: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;*/
+    -webkit-box-flex: 1;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    width: 33%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    border-right: 2px solid #bec5cb;
+    padding: 0 1em;
+    display: block !important;
+
+}
+.ld-course-status .ld-tertiary-background {
+    background-color: #f89827 !important;
+    line-height: 1.3;
+    border-radius: 12px;
+    background-color: #e2e7ed;
+    text-align: center;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: inherit;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.ld-course-status span.ld-course-status-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-size: 32px;
+    font-weight: bold;
+    color: #728188;
+    margin-top: -3px;
+    line-height: 1;
+    margin-right: 0 !important;
+}
+
+.ld-course-status .btn-join,
+.ld-course-status .ld-button {
+    margin: 0;
+    border-radius: 20px;
+    background-color: #163b55;
+    color: #fff !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: inherit;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    text-shadow: none;
+    border: 0;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    padding: 12px 25px !important;
+    margin: auto !important;
+}
+
+.learndash_post_sfwd-courses .ld-course-status .ld-course-status-segment:last-child {
+    border-right: none;
+}
+.learndash_post_sfwd-courses .ld-course-status .ld-course-status-segment .ld-course-status-content{
+    height: 40px !important;
+    text-align: center !important;
+    margin: auto !important;
+}
+.learndash_post_sfwd-courses .ld-course-status .ld-course-status-segment .ld-course-status-label {
+    display: block !important;
+    /*text-align: center !important;
+    margin: auto !important;
+    padding: 10px;
+    display: block;*/
+    color: #728188;
+    font-size: inherit;
+    font-weight: bold;
+     margin-bottom: 1em;
+}
+.elumine-percentage-info .modern-icon-Check-mark::before,
+.ld-progress-percentage .el-completed-text {
+    color: #ef8204 !important;
+}
+
+.ld-progress-stats {
+    background-color: #fff !important;
+    border: 1px solid #999;
+}
+
+.ld-course-status-enrolled .ld-progress .ld-progress-stats .ld-progress-steps label {
+    color: inherit !important;
+}
+/*.learndash_post_sfwd-courses .ld-course-status a{
+    color: #ef8204 !important;
+}*/
+.learndash_post_sfwd-courses .ld-course-status a:hover{
+    color: #ef8204 !important;
+    background-color: #fff;
+    border: 1px solid #ef8204 !important;
+}
+
+.learndash_post_sfwd-courses .el-bg-transparent {
+    background-color: #f9f9fa !important;
+/*     background-color: #000; */
+}
+
+.learndash_post_sfwd-courses .el-course-banner .el-course-info .el-course-title {
+    color: #163b55;
+}
+
+/*.learndash_post_sfwd-courses .el-course-details * {
+    color: #163b55;
+}*/
+
+.learndash_post_sfwd-courses .el-course-details {
+    display: none;
+}
+
+.learndash_post_sfwd-courses .el-course-banner .el-course-info {
+    min-height: 50vh;
+}
+
+.learndash_post_sfwd-courses h1.el-course-title {
+    margin-top: 6rem;
+}
+/* Course Landing Page - Customization ENDS */
+
+/* Mobile Menu changes */
+.menu-mobile-menu-container a.menu-more-arrow:after{
+    margin-left: -40px;
+}
+/* Mobile Menu changes - ENDS */
+
+.learndash_post_sfwd-courses .ld-section-heading {
+    flex-wrap: wrap;
+}
+
+
+/*404 Page*/
+
+.error-404 h6 {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: .125em;
+    line-height: 1.35;
+    margin: 0;
+    color: #05294e;
+    width: fit-content;
+}
+.error-404 h6.underline_orange {
+    margin: auto;
+    display: inline-block;
+    padding-bottom: .875rem;
+    border-bottom: 2px solid #05294e;
+    border-color: #ec5f3b;
+}
+
+.error-404 h1 {
+  clear: both;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1.16666667;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 1.75rem 0 1.5rem;
+  color: #05294e;
+  margin: auto;
+  width: fit-content;
+}
+.wdm-404-content-custom-img{
+    height: 300px;
+    max-width: 350px;
+    margin: 100px auto;
+}
+
+.mi {
+    font-style: italic !important;
+}
+
+span.wdm-single-price .from {
+    display: none;
+}
+
+.wdm-price-label {
+    margin-right: 10px;
+}
+
+.collapseomatic {
+   color: #ef8204;
+}
+
+span.wdm-single-price {
+    font-size: 18px;
+}
+
+form.post-password-form {
+    margin: 10em 4em;
+    text-align: center;
+}
+
+.tts-password-message {
+    margin-top: 80px;
+    margin: 80px 40px 0 ;
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+    padding: 1.2rem 1.25rem;
+    padding-left: 49px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 16px;
+}
+
+p.graded-disclaimer {
+    display: none;
+}
+
+.ld-progress .el-start-resume {
+    margin-right: 10px;
+}
+
+.wdm-table-tb .woocommerce-table__product-purchase-note.product-purchase-note {
+    padding: 15px 20px 15px 28px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.woocommerce form.cart.composite_form {
+    flex-direction: column;
+}
+
+body.elumine  #ui-datepicker-div.ui-datepicker[style] {
+    z-index: 10000000000 !important;
+}
+
+div.ui-dialog.gpnf-dialog {
+    z-index: 1000000 !important;
+    border: 0;
+}
+
+.gpnf-dialog .ui-button.ui-dialog-titlebar-close .ui-icon {
+    background: none;
+    background-color: none;
+    color: #fff;
+    line-height: 1 !important;
+}
+.gpnf-dialog .ui-button.ui-dialog-titlebar-close{
+    right: 1.5em;
+    top: 2.5em;
+}
+.gpnf-dialog .ui-button.ui-dialog-titlebar-close:hover {
+    background: none;
+    background-color: none;
+    border: 0
+}
+.gpnf-dialog .ui-button.ui-dialog-titlebar-close .ui-icon:after {
+    color: #fff;
+    opacity: 1;
+}
+
+.gpnf-dialog .ui-dialog-titlebar {
+    height: auto !important;
+}
+
+.order_item.wdm-table-common ul.wc-item-meta {
+    list-style-type: none;
+}
+
+td.woocommerce-orders-table__cell-order-actions a {
+    padding: 8px !important;
+}
+.digital-contact {
+    display: flex;
+    align-items: center !important;
+}
+.woocommerce-order-pay #payment .wdm-checkbox {
+    border: 1px solid #05294e!important
+}
+
+.tts-thankyou-msg {
+    text-align: center;
+    font-size: 15px;
+}
+
+i.tts-info-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #444444;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #E7E7E7;
+        transition: all 0.4s linear;
+        cursor: pointer;
+}
+
+.learndash-quiz-not-available {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-bottom: 21px;
+}
+.learndash-quiz-not-available a{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+
+.ld-item-list-item-preview {
+    flex: 1;
+}
+
+.tts-row-no-access {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.tts-tooltip-content {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background: rgb(59 59 59 / 20%);
+   content: '';
+   z-index: 10;
+   display: none;
+   top: 0;
+   left: 0;
+   padding-top: 140px;
+}
+
+.tts-tooltip-text {
+    background: #fff;
+    display: block;
+    width: 75%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+i.tts-close-icon.fa.fa-times-circle {
+    cursor: pointer;
+    /* text-align: right; */
+    font-size: 1.8em;
+    float: right;
+}
+
+.ld-table-list-item-quiz {
+    flex: 1;
+}
+
+.tts-tooltip-trigger {
+    display: inline-block;
+}
+.tts-show {
+    display: block;
+}
+
+.wdm_quiz_attempt_section .ld-table-list-item-expanded{
+    display: none;
+}
+
+ /*.wdm-login-page {
+    background-color: #FFF !important;
+    padding: 60px !important;
+    margin: 50px auto !important;
+    max-width: 500px !important;
+    box-shadow: 0px 17px 15px -12px #9f9f9f !important;
+    transition: box-shadow 0.3s !important;
+    border: 1px solid #e8e8e8 !important;
+}
+
+.page-template-login_template .site-content-contain .wdm-login-page #elumine_login_form {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 23px !important;
+    text-align: left !important;
+}*/
+
+/*
+Hide Footer in LearnDash focus mode
+*/
+.ld-focus footer{
+    display: none !important;
+}
+
+/*
+Hide bottom navigation in LearnDash focus mode
+Trello card: https://trello.com/c/4DRfQEJK/205-scrolling-ux-at-bottom-of-assessment-looks-strange
+*/
+.ld-focus-main .ld-content-actions{
+    display: none !important;
+}
+
+/*
+Display Assesment in next line
+Trello card: https://trello.com/c/vXBe6dEV/186-learndash-focus-mode-navigation-assessments-should-be-on-next-line
+*/
+.el-quiz-count{
+    display: block !important;
+    margin-left: 38px !important;
+}
+
+/*
+Checkout > Credit Card > Cannot See or click on Box for "Securely Save to Account"
+Trello card: https://trello.com/c/8iHgJRLl/214-checkout-credit-card-cannot-see-or-click-on-box-for-securely-save-to-account;
+*/
+.payment_box .wdm-checkbox{
+    border-color: #bbb3b9 !important;
+    border-width: 2px;
+    margin-right: 5px !important;
+}
+.payment_box .wdm-checkbox input{
+    margin: 0px !important;
+    width: 36px !important;
+    height: 36px !important;
+}
+
+
+.tts-collapse-content table {
+    table-layout:fixed;
+    width:100%;
+}
+.tts-collapse-content ul.wpProQuiz_questionList li label {
+    margin-left: 50px !important;
+}
+
+.woocommerce-store-notice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* margin:0; */
+    width: 100%;
+    font-size: 1em;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #a46497;
+    color: #fff;
+    z-index: 99998;
+    box-shadow: 0 1px 1em rgba(0,0,0,0.2);
+    /* display:none; */
+}
+
+.woocommerce-store-notice a {
+    color: #fff;
+    text-decoration: underline
+}
+
+.wpProQuiz_button2, .wpProQuiz_button {
+    font-weight: 500 !important;
+}
+
+.button {
+    background-color: #00316a !important;
+    color: #ffffff !important;
+    padding: 12px 24px !important;
+    margin: 0 3px !important;
+    border-radius: 3px !important;
+}
+
+.wpProQuiz_correct .wpProQuiz_AnswerMessage span, 
+.wpProQuiz_incorrect .wpProQuiz_AnswerMessage span {
+    margin: 0 !important;
+}
+
+.wpProQuiz_correct > span, 
+.wpProQuiz_incorrect > span {
+    margin: 10px !important;
+}
+
+.elumine-theme form.wdm-edit-acc-form input.woocommerce-Button {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    background: #00316a !important;;
+    border-radius: 50px;
+    color: #fff !important;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #c8c8c8;
+    box-shadow: 0px 17px 15px -12px #9f9f9f;
+}
+.tts-post-box .footer {
+    margin-top: 20px;
+}
+.tts-post-box .product-tile {
+    padding: 25px !important;
+    padding-bottom: 45px !important;
+}
+
+.tts-post-button {
+    margin: 0 !important;
+}
+
+.tts-post-box .small > * {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: "proxima-nova",sans-serif;
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.ginput_container_select select {
+    background: #f0f0f0 url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCiAgICAgICAgICAgICAgICAgICAgPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQogICAgICAgICAgICAgICAgICAgICAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayINCiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoPSIzM3B4IiBoZWlnaHQ9IjMxcHgiIHZpZXdCb3g9IjAgMCAzMyAzMSI+DQogICAgICAgICAgICAgICAgICAgIDxmaWx0ZXIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4PSIwLjAwIiB5PSIwLjAwIiB3aWR0aD0iMTAwLjAwIiBoZWlnaHQ9IjEwMC4wMCIgaWQ9ImZpbHRlcjAiPg0KICAgICAgICAgICAgICAgICAgICA8ZmVGbG9vZCBmbG9vZC1jb2xvcj0iIzAwMzE2YSIgcmVzdWx0PSJjb0Zsb29kT3V0MSIvPg0KICAgICAgICAgICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49ImNvRmxvb2RPdXQxIiBpbjI9IlNvdXJjZUFscGhhIiBvcGVyYXRvcj0iaW4iIHJlc3VsdD0iY29PdmVybGF5MSIvPg0KICAgICAgICAgICAgICAgICAgICA8ZmVCbGVuZCBpbj0iY29PdmVybGF5MSIgaW4yPSJTb3VyY2VHcmFwaGljIiBtb2RlPSJub3JtYWwiIHJlc3VsdD0iY29sb3JPdmVybGF5MSIvPg0KICAgICAgICAgICAgICAgICAgICA8L2ZpbHRlcj4NCiAgICAgICAgICAgICAgICAgICAgPGZpbHRlciBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHg9IjAuMDAiIHk9IjAuMDAiIHdpZHRoPSIxMDAuMDAiIGhlaWdodD0iMTAwLjAwIiBpZD0iZmlsdGVyMSI+DQogICAgICAgICAgICAgICAgICAgIDxmZUZsb29kIGZsb29kLWNvbG9yPSJyZ2IoMjU1LDI1NSwyNTUpIiByZXN1bHQ9ImNvRmxvb2RPdXQxIi8+DQogICAgICAgICAgICAgICAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iY29GbG9vZE91dDEiIGluMj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJpbiIgcmVzdWx0PSJjb092ZXJsYXkxIi8+DQogICAgICAgICAgICAgICAgICAgIDxmZUJsZW5kIGluPSJjb092ZXJsYXkxIiBpbjI9IlNvdXJjZUdyYXBoaWMiIG1vZGU9Im5vcm1hbCIgcmVzdWx0PSJjb2xvck92ZXJsYXkxIi8+DQogICAgICAgICAgICAgICAgICAgIDwvZmlsdGVyPg0KICAgICAgICAgICAgICAgICAgICA8aW1hZ2UgeD0iMCIgeT0iMCIgd2lkdGg9IjMzIiBoZWlnaHQ9IjMxIiBmaWx0ZXI9InVybCgjZmlsdGVyMCkiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0VBQUFBZkNBQUFBQUJNLy90dUFBQUFCR2RCVFVFQUFMR1BDL3hoQlFBQUFDQmpTRkpOQUFCNkpnQUFnSVFBQVBvQUFBQ0E2QUFBZFRBQUFPcGdBQUE2bUFBQUYzQ2N1bEU4QUFBQUFtSkxSMFFBLzRlUHpMOEFBQUFXU1VSQlZEakxZM2hPQ0RDTXFoaFZNYXBpUktvQUFMdnBtMGZmdE9BaUFBQUFKWFJGV0hSa1lYUmxPbU55WldGMFpRQXlNREUzTFRBNExUSTBWREV3T2pReE9qSXlLekF3T2pBd0FhSlAxQUFBQUNWMFJWaDBaR0YwWlRwdGIyUnBabmtBTWpBeE55MHdPQzB5TkZReE1EbzBNVG95TWlzd01Eb3dNSEQvOTJnQUFBQUFTVVZPUks1Q1lJST0iIC8+PGltYWdlIHg9IjEyIiB5PSIxMiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjYiIGZpbHRlcj0idXJsKCNmaWx0ZXIxKSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBb0FBQUFHQWdNQUFBQ0hudWRWQUFBQUJHZEJUVUVBQUxHUEMveGhCUUFBQUNCalNGSk5BQUI2SmdBQWdJUUFBUG9BQUFDQTZBQUFkVEFBQU9wZ0FBQTZtQUFBRjNDY3VsRThBQUFBQ1ZCTVZFVUFNV29BTVdyLy8vOHRwZ25MQUFBQUFYUlNUbE1BUU9iWVpnQUFBQUZpUzBkRUFtWUxmR1FBQUFBZ1NVUkJWQWpYWXhCZ2NHQUlZUXhnRUdWMVlHQU5aV0JnREdGZ1lBaGdBQUFkVHdKUDhzZ3JkUUFBQUNWMFJWaDBaR0YwWlRwamNtVmhkR1VBTWpBeE55MHdPQzB5TkZReE1EbzBNVG95TWlzd01Eb3dNQUdpVDlRQUFBQWxkRVZZZEdSaGRHVTZiVzlrYVdaNUFESXdNVGN0TURndE1qUlVNVEE2TkRFNk1qSXJNREE2TURCdy8vZG9BQUFBQUVsRlRrU3VRbUNDIiAvPjwvc3ZnPg==) 96% 0 no-repeat !important
+}
+
+.ginput_container input[type='text'], 
+.ginput_container input[type='password'], 
+.ginput_container input[type='email'] {
+    background-color: #e3e3e3 !important;
+    background: #f0f0f0 !important;
+}
+
+.elumine-mark-complete .ld-content-actions {
+    display: block !important;
+}
+
+
+/* 28/03/2022 */
+/* .admin-bar.logged-in header#masthead.margin-added-loggedin {
+    margin-top: 75px;
+} */
+header#masthead.margin-added-nonloggedin {
+    margin-top: 50px;
+}
+.woocommerce-store-notice{
+    position: fixed !important;
+}
+@media only screen and (max-width: 992px) {
+    .admin-bar.logged-in header#masthead .action--open { 
+        right: 30px !important;
+    }    
+}
+/* 28/03/2022 */
+
+
+
+@media only screen  and (max-device-width : 1000px)  {
+/* Styles */
+    .wdm-popup-container {
+        width: 90%;
+        padding: 2rem;
+        top: 6rem;
+    }
+}
